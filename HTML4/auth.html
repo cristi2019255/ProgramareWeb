@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ro">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in </title>
+
+</head>
+<body background="../assets/MainBackgroung.jpg">
+    <div class="header">
+        <div class="navbar">
+            <div class="container">
+                <img src="../assets/Logo2.png" alt="Logo" width="200" height="100">
+
+                <div class="row">
+                    <ul>
+                        <li>
+                            <a href="main.html">Main</a>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <a href="register.html">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="container">
+                    <div>
+                        <form id="account" method="post" action="">
+                            <fieldset>
+                                <legend>Log In</legend>
+                                <h4>Use a local account to log in.</h4>
+                                <hr>
+
+                                <div class="form-group">
+                                    <label for="Input_Email">Email</label>
+                                    <input class="form-control" type="text" id="Input_Email" name="Input.Email" value="email" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="Input_Password">Password</label>
+                                    <input class="form-control" type="password" id="Input_Password" name="Input.Password" maxlength="10"/>
+                                </div>
+                                <div class="form-group">
+                                    <div class="checkbox">
+                                        <label for="Input_RememberMe">
+                                            <input type="checkbox" id="Input_RememberMe" name="Input.RememberMe" value="true" />
+                                            Remember me?
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button id="login-submit" type="submit" class="btn">Log in</button>
+                                </div>
+
+                                <div class="form-group">
+                                    <div>
+                                        <a id="forgot-password" href="forgotPassword.html">Forgot your password?</a>
+                                    </div>
+                                    <div>
+                                        <a href="register.html">Register as a new user</a>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            &copy; 2020 - Grosu - <a href="../Privacy/index.html" target="_blank">Privacy</a>
+        </div>
+    </div>
+</body>
+</html>

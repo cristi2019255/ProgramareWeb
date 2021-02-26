@@ -1,0 +1,337 @@
+<!Doctype html>
+<html>
+<head>
+
+    <title>Main Page</title>
+</head>
+<body background="../assets/MainBackgroung.jpg">
+    <header>
+        <img src="../assets/Logo.png" alt="Logo" width="200" height="100">
+        <nav>
+            <ul>
+
+                <li>
+                    <a href="all_movies.html">All Movies</a>
+                </li>
+
+                <li>
+                    <a href="auth.html">Log Out</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main style="text-align: center">
+        <section id="page_title">
+            <h1>Bine ati venit!</h1>
+        </section>
+
+        <hr>
+
+        <section id="seach_form">
+            <form method="get" action="">
+                <div>
+                        <label for="input_name_movie">Cauta filmele care te intereseaza:</label>
+                        <input id="input_name_movie" type="text" value="nume film">
+                        <input type="submit" value="Cauta">
+                    </div>
+                <div>
+                        <label for="genre">Selecteaz&#259; genul filmului dorit:</label>
+                        <br>
+                        <input list="genre">
+                        <datalist id="genre" size="5" multiple>
+                            <option id="ThrillerOption" selected>Thriller</option>
+                            <option id="ActionOption">Action</option>
+                            <option id="ComedyOption">Comedy</option>
+                            <option id="DramaOption">Drama</option>
+                            <option id="FantasyOption">Fantasy</option>
+                            <option id="HorrorOption">Horror</option>
+                            <option id="RomanceOption">Romance</option>
+                            <option id="MisteryOption">Mistery</option>
+                        </datalist>
+                    </div>
+
+                <br>
+
+                <div>
+                        Te rug&#259;m s&#259; introduci aici virsta ta pentru a selecta mai bine filmele:
+                        <br>
+                        <input name="age" id="age" type="number"  min="0" max="100" step="1" value="21">
+                    </div>
+
+                <br><br>
+
+                <div>
+                        <p>
+                            <b>
+                                Pentru a &#238;n&#355;elege mai bine de ce este nevoie de v&#238;rsta ta
+                                arunca o privire pe tabelul de mai jos:
+                                <br>
+                            </b>
+                        </p>
+                        <table bgcolor="#00ffff" border="3px" title="Categorii de varsta">
+                            <tr>
+                                <th>
+                                    Simbolul de ranking
+                                </th>
+                                <th>
+                                    Semnificatie
+                                </th>
+                                <th>
+                                    Varsta
+                                </th>
+                            </tr>
+
+                            <tr>
+                                <td align="left">G</td>
+                                <td valign="top"><i>General audience</i></td>
+                                <td>Toate varstele</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">PG</td>
+                                <td valign="middle">
+                                    <i>Parental Guidance Suggested</i>
+                                </td>
+                                <td>
+                                    copii cu varsta mai mica de 13 ani
+                                    <br>
+                                    ar fi recomand sa fie insotiti de parinti
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="right">PG-13</td>
+                                <td valign="bottom">
+                                    <i>Parents Strongly Cautioned</i>
+                                </td>
+                                <td> >13 ani </td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="bottom">R</td>
+                                <td valign="top">
+                                    <i>Restricted</i>
+                                </td>
+                                <td>
+                                    cei cu varsta mai mica de 17 ani
+                                    <br>
+                                    necesita sa fie acompaniati de cel putin un adult
+                                </td>
+                            </tr>
+                            <tr>
+                                <td align="left">NC-17</td>
+                                <td>
+                                    <i>Adults only</i>
+                                </td>
+                                <td> >17 ani </td>
+                            </tr>
+                        </table>
+                    </div>
+                <div>
+                    Poti selecta orasul si cinematograful la care doresti sa faci o rezervare:
+                    <div id="lista_orase">
+                        <ul>
+                            <li>
+                                Cluj
+                                <ol>
+                                    <li>
+                                        <input type="checkbox" value="Cinema Vivo Cluj" checked>
+                                        Cinema Vivo
+                                    </li>
+                                    <li>
+                                        Cinema Iulius
+                                        <ol type="A">
+                                            <li>
+                                                <input type="checkbox" value="Cinema Iulius Cluj Etaj I">
+                                                Etaj I
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" value="Cinema Iulius Cluj Etaj II">
+                                                Etaj II
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                Iasi
+                                <ol>
+                                    <li>
+                                        Cinema Iulius
+                                        <input type="checkbox" value="Cinema Iulius Iasi" disabled>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        Doresti Cola si Popcorn?
+                    </div>
+                    <label for="yes_cola_and_popcorn">Da</label>
+                    <input id="yes_cola_and_popcorn" type="radio" value="True" checked>
+                    <label for="no_cola_and_popcorn">Nu</label>
+                    <input id="no_cola_and_popcorn" type="radio" value="False">
+                </div>
+            </form>
+        </section>
+
+        <br><br>
+        <hr>
+        <br><br>
+
+        <section id="top_movies">
+            <article>
+                <h2>Top 3 movies this week</h2>
+                <aside><h3>Looks like "Interstelar" is the most likely now</h3></aside>
+                <ol start="0">
+                    <li>
+                        <h3>Interstellar</h3>
+                        <details>
+                            <summary>Overview</summary>
+                            <p>Interstellar e un film ok</p>
+                        </details>
+                        <figure>
+                            <img src="../assets/top1movie.png" height="339"  width="241" alt="1 movie in top">
+                            <img src="../assets/top1movie1.jpg" height="339" width="241" alt="1 movie in top">
+                            <figcaption>Gallery</figcaption>
+                        </figure>
+                        <div>
+                            <input type="button" class="btn" value="Rezerva">
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Da Vinci Code</h3>
+                        <details>
+                            <summary>Overview</summary>
+                            <p>The Da Vinci Code is a 2006 American mystery thriller film directed by Ron Howard, written by Akiva Goldsman, and based on Dan Brown's 2003 best-selling novel of the same name. The first in the Robert Langdon film series, the film stars Tom Hanks, Audrey Tautou, Sir Ian McKellen, Alfred Molina, Jürgen Prochnow, Jean Reno and Paul Bettany. In the film, Robert Langdon, a professor of religious symbology from Harvard University, is the prime suspect in the grisly and unusual murder of Louvre curator Jacques Saunière. On the body, the police find a disconcerting cipher and start an investigation.[3] Langdon escapes with the assistance of police cryptologist Sophie Neveu, and they begin a quest for the legendary Holy Grail. A noted British Grail historian, Sir Leigh Teabing, tells them that the actual Holy Grail is explicitly encoded in Leonardo da Vinci's wall painting, The Last Supper. Also searching for the Grail is a secret cabal within Opus Dei, an actual prelature of the Holy See, who wish to keep the true Grail a secret to prevent the destruction of Christianity.</p>
+                        </details>
+                        <figure>
+                            <img src="../assets/top2movie.png" height="339"  width="241" alt="2 movie in top">
+                            <img src="../assets/top2movie2.webp" height="339"  width="241" alt="2 movie in top">
+                            <figcaption>Gallery</figcaption>
+                        </figure>
+                        <div>
+                            <input type="button" class="btn" value="Rezerva">
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Fast and Fourios 9</h3>
+
+                        <details>
+                            <summary>Overview</summary>
+                            <p> Un film</p>
+                        </details>
+                        <img src="../assets/top3movie.png" alt="3 movie in top">
+
+                        <div>
+                            <input type="button" class="btn" value="Rezerva">
+                        </div>
+                    </li>
+                </ol>
+            </article>
+            <article>
+                <h2>Top 3 movies this week</h2>
+                <ol start="0">
+                    <li>
+                        <h3>Da Vinci Code</h3>
+                        <details>
+                            <summary>Overview</summary>
+                            <p>The Da Vinci Code is a 2006 American mystery thriller film directed by Ron Howard, written by Akiva Goldsman, and based on Dan Brown's 2003 best-selling novel of the same name. The first in the Robert Langdon film series, the film stars Tom Hanks, Audrey Tautou, Sir Ian McKellen, Alfred Molina, Jürgen Prochnow, Jean Reno and Paul Bettany. In the film, Robert Langdon, a professor of religious symbology from Harvard University, is the prime suspect in the grisly and unusual murder of Louvre curator Jacques Saunière. On the body, the police find a disconcerting cipher and start an investigation.[3] Langdon escapes with the assistance of police cryptologist Sophie Neveu, and they begin a quest for the legendary Holy Grail. A noted British Grail historian, Sir Leigh Teabing, tells them that the actual Holy Grail is explicitly encoded in Leonardo da Vinci's wall painting, The Last Supper. Also searching for the Grail is a secret cabal within Opus Dei, an actual prelature of the Holy See, who wish to keep the true Grail a secret to prevent the destruction of Christianity.</p>
+                        </details>
+                        <figure>
+                            <img src="../assets/top2movie.png" height="339"  width="241" alt="2 movie in top">
+                            <img src="../assets/top2movie2.webp" height="339"  width="241" alt="2 movie in top">
+                            <figcaption>Gallery</figcaption>
+                        </figure>
+                        <div>
+                            <input type="button" class="btn" value="Rezerva">
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Interstellar</h3>
+                        <details>
+                            <summary>Overview</summary>
+                            <p>Interstellar e un film ok</p>
+                        </details>
+                        <figure>
+                            <img src="../assets/top1movie.png" height="339"  width="241" alt="1 movie in top">
+                            <img src="../assets/top1movie1.jpg" height="339" width="241" alt="1 movie in top">
+                            <figcaption>Gallery</figcaption>
+                        </figure>
+                        <div>
+                            <input type="button" class="btn" value="Rezerva">
+                        </div>
+                    </li>
+                    <li>
+                        <h3>Fast and Fourios 9</h3>
+
+                        <details>
+                            <summary>Overview</summary>
+                            <p> Un film</p>
+                        </details>
+                        <img src="../assets/top3movie.png" alt="3 movie in top">
+
+                        <div>
+                            <input type="button" class="btn" value="Rezerva">
+                        </div>
+                    </li>
+                </ol>
+            </article>
+        </section>
+
+        <section id="developer_infos">
+            <span>
+                <strong> Las&#259; aici comentarii pentru dezvoltator</strong>
+                <br>
+                <textarea rows="10" cols="100"></textarea>
+                <div>
+                    <input type="button" value="Trimite">
+                </div>
+            </span>
+
+            <table>
+                    <tr>
+                        <td>
+                            <img src="../assets/developer.png" width="200" height="200" alt="imagine a dezvoltatorului">
+                        </td>
+                        <td>
+                            <table bgcolor="#f5f5dc" border="2px">
+                                <tr>
+                                    <th rowspan="2">
+                                        Functie
+                                    </th>
+                                    <th colspan="2">
+                                        Contact
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        Telefon
+                                    </th>
+                                    <th>
+                                        Email
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Dezvoltator Principal si Administrator
+                                    </td>
+                                    <td>
+                                        +40749369957
+                                    </td>
+                                    <td>
+                                        <input value="cristi2019255@gmail.com" type="text" readonly>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+
+        </section>
+    </main>
+
+    <footer style="text-align: center;">
+        &copy; 2020 - Grosu - <a href="../Privacy/index.html">Privacy</a>
+    </footer>
+</body>
+</html>
